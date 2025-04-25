@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+  <header>
+    <h1>🌦️ Weather Forecast App</h1>
+    <p>Get real-time weather updates and a 5-day forecast!</p>
+  </header>
+
+  <section class="controls">
+    <button onclick="getWeatherByLocation()">📍 Current Location</button>
+    <input type="text" id="cityInput" placeholder="Enter city name..." />
+    <button onclick="getWeatherByCity()">🔍 Search</button>
+    <select id="recentCities" onchange="selectRecentCity()">
+      <option value="">Recent Searches</option>
+    </select>
+  </section>
+
+  <section id="weatherDisplay"></section>
+
+  <section id="forecast"></section>
+
+  <script src="weather.js"></script>
+</body>
+</html>
